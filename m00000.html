@@ -18,7 +18,14 @@
         font:bold 5rem/2 arial, verdana, "Helvetica Neue", serif;
       }
     </style>
-
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   </head>
   <body>
 
@@ -68,7 +75,11 @@
 
     </div>
     <br><br><br><br>
-
+    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"
+     data-layout="button" data-size="small" data-mobile-iframe="true">
+     <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+      class="fb-xfbml-parse-ignore">
+      공유하기</a></div>
 
     <div class="text-right">
     <address>
@@ -76,21 +87,6 @@
       <p>본 서비스의 공유 및 사용은 <strong>격렬하게</strong> 환영합니다.</p>
       <strong>피드백은 <a href="mailto:#"><u>fonfonproject@gmail.com</u></a>로 부탁드립니다.</strong><br>
     </address>
-  </div>
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
-  <!-- Your share button code -->
-  <div class="fb-share-button"
-    data-href="https://2hakju.github.io/fonfon/m00000.html"
-    data-layout="button_count">
   </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
