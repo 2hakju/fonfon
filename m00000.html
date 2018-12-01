@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="centerblock.css">
     <link rel="icon" href="http://bootstrapk.com/favicon.ico">
     <link href="./Narrow Jumbotron Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
-
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
     <style>
       #type1{
         font-weight: bold;
@@ -80,6 +80,42 @@
      data-layout="button" class="btn btn-primary btn-lg" data-mobile-iframe="true"><a target="_blank"
       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F2hakju.github.io%2Ffonfon%2Fm00000.html&amp;src=sdkpreparse"
        class="fb-xfbml-parse-ignore">공유하기</a></div>
+
+       <script type="text/javascript">
+       Kakao.init('bfd4cd7749e2b1ffca24a00eeb5aaabc');
+           // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+           Kakao.Link.createDefaultButton({
+             container: '#kakao-link-btn',
+             objectType: 'feed',
+             content: {
+               title: document.title,
+               description: '내용, 주로 해시태그',
+               imageUrl: document.images[0].src,
+               link: {
+                 webUrl: document.location.href,
+                 mobileWebUrl: document.location.href
+               }
+             },
+             social: {
+               likeCount: 286,
+               commentCount: 45,
+               sharedCount: 845
+             },
+             buttons: [
+               {
+                 title: 'Open!',
+                 link: {
+                   mobileWebUrl: document.location.href,
+                   webUrl: document.location.href
+                 }
+               }
+             ]
+           });
+         //]]>
+         </script>
+
+
+
     </div>
     <div class="text-right">
     <address>
