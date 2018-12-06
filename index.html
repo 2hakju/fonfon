@@ -536,6 +536,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           if (rs % 64 == 63){
             rpp.src = "f11111.png";
           }
+          document.getElementById("aa1").style.display = "none";
+          document.getElementById("bb1").style.display = "none";
           document.getElementById("det").innerHTML = list[rs]["detail"];
           document.getElementById("pct").innerHTML = list[rs]["percent"];
           document.getElementById("lk").style.display = "block";
@@ -739,6 +741,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           if (rs % 64 == 63){
             rpp.src = "f11111.png";
           }
+          document.getElementById("aa1").style.display = "none";
+          document.getElementById("bb1").style.display = "none";
           document.getElementById("det").innerHTML = list[rs]["detail"];
           document.getElementById("pct").innerHTML = list[rs]["percent"];
           document.getElementById("lk").style.display = "block";
@@ -783,6 +787,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           iss.src = "q5_1.png";
         }
         else if (tt == 6 && rs >= 64){
+          document.getElementById("aa1").style.display = "none";
+          document.getElementById("bb1").style.display = "none";
           var is = document.aa;
           is.src =  "";
           var rpp = document.rsp;
@@ -1504,6 +1510,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         is.src =  "mq.png";
         var iss = document.bb;
         iss.src = "fq.png";
+        document.getElementById("aa1").style.display = "block";
+        document.getElementById("bb1").style.display = "block";
         document.getElementById("lk").style.display = "none";
         document.getElementById("lkm").style.display = "none";
         document.getElementById("lkf").style.display = "none";
@@ -1526,6 +1534,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         is.src =  "mq.png";
         var iss = document.bb;
         iss.src = "fq.png";
+        document.getElementById("aa1").style.display = "block";
+        document.getElementById("bb1").style.display = "block";
         document.getElementById("lk").style.display = "none";
         document.getElementById("lkm").style.display = "none";
         document.getElementById("lkf").style.display = "none";
@@ -1547,6 +1557,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         is.src =  "mq.png";
         var iss = document.bb;
         iss.src = "fq.png";
+        document.getElementById("aa1").style.display = "block";
+        document.getElementById("bb1").style.display = "block";
         document.getElementById("lk").style.display = "none";
         document.getElementById("lkm").style.display = "none";
         document.getElementById("lkf").style.display = "none";
@@ -1571,13 +1583,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row">
               <div class="text-center">
               <br><br>
+                
               <div class="col-lg-6">
+                <div id = "aa1" style="display:block">
                   <img name="aa" src= "favq.png" height="300" class="img-rounded" onclick = "cl1();qqc();qcl();favmc();favfc();mec()">
-                  <img name="rsp" src= "" height="300" class="img-rounded">
+                  </div>  
+                <img name="rsp" src= "" height="300" class="img-rounded">
               </div>
 
               <div class="col-lg-6">
+                <div id = "bb1" style="display:block">
                   <img name="bb" src="meq.png" height="300" class="img-rounded" onclick = "cl2();qqc();qcl();favmc();favfc();mec()">
+                </div>
                   <div class = "text-left">
                   <h2 id="det"></h2>
                   <h2 id="pct"></h2>
